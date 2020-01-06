@@ -17,7 +17,7 @@ wks = gc.open("Scraped articles").sheet1
 """
 
 # change loop numbers to scrape more
-urlBegin = 'https://indianexpress.com/latest-news/'
+urlBegin = 'https://indianexpress.com/section/india/page/'
 a = int(input("Start from page: "))
 b = int(input("End at page: "))
 with open('news_articles.csv', mode='w') as news_file:
