@@ -20,7 +20,7 @@ wks = gc.open("Scraped articles").sheet1
 urlBegin = 'https://indianexpress.com/section/india/page/'
 a = int(input("Start from page: "))
 b = int(input("End at page: "))
-with open('news_articles.csv', mode='w') as news_file:
+with open('ie_india_articles.csv', mode='a') as news_file:
     news_writer = csv.writer(news_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for i in range(a, b):
         print "scraping page", str(i)
